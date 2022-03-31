@@ -4,20 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-image: url('imagens/wallpaper002.jpg');
+            /*background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-size: cover; /* contain = faz com que SEMPRE apareça 100% da imagem, não importando o tamanho da tela || cover = ajusta a imagem a 100% da tela, mesmo que tenha que cortar alguma parte*/
-            background-repeat: repeat-y;
+            background-size: cover; /* contain = faz com que SEMPRE apareça 100% da imagem, não importando o tamanho da tela || cover = ajusta a imagem a 100% da tela, mesmo que tenha que cortar alguma parte
+            background-repeat: no-repeat;
             background-color: black;
+            background-attachment: fixed;  /* attachment = vínculo */
+
+            /* Shorthand - background
+                color > image > position > repeat > [size - atualmente, o size não é aceito na Shorthand. Temos de criá-lo à parte.] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat scroll;
+            background-size: cover;
         }
 
         main {
             margin: auto;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             border-radius: 15px;
             border: 1px solid darkblue;
